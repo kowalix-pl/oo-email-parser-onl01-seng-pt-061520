@@ -13,7 +13,7 @@ attr_accessor :email_addresses
    
   def parse
     email_addresses.split(/\s", "/)
-   binding.pry
+
   end 
 
   def self.all 
