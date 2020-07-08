@@ -11,10 +11,10 @@ attr_accessor :email_addresses
  end
    
 def parse
-  puts splitEmail = email_addresses.split.collect {|address| address.split(',')} 
+ splitEmail = email_addresses.split.collect {|address| address.split(',')} 
   returnArr = splitEmail.flatten.uniq
   returnArr
-  binding.pry
+  
 end
 
 end
