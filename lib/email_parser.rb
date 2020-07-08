@@ -5,7 +5,7 @@
 require 'pry'
 class EmailAddressParser 
 attr_accessor :email_addresses
- @@emails = []
+
  def initialize(email_addresses)
    @email_addresses = email_addresses
  end
@@ -14,6 +14,7 @@ def parse
   puts splitEmail = email_addresses.split.collect {|address| address.split(',')} 
   returnArr = splitEmail.flatten.uniq
   returnArr
+  binding.pry
 end
 
 end
