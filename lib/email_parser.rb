@@ -5,15 +5,16 @@
 require 'pry'
 class EmailAddressParser 
 attr_accessor :email_addresses
- @@parsed_emails = []
+ @@emails = []
  def initialize(email_addresses)
    @email_addresses = email_addresses
-   @@parsed_emails << self
-   binding.pry
+   @@emails << self
  end
    
-  def parse(emails)
-    parser = emails.split()
+  def parse
+    parser = @@emails.split()
+  end 
+  binding.pry
   end
 
 end
