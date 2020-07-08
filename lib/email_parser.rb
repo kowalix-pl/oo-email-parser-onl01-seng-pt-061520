@@ -14,6 +14,7 @@ attr_accessor :email_addresses
   def parse
     parser = email_addresses.split(/\s/)
     parser.uniq
+    binding.pry
   end 
 
   def self.all 
