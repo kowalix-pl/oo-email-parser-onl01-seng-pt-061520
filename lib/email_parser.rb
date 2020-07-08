@@ -14,7 +14,7 @@ def parse
  emailSplit = email_addresses.split.collect {|address| address.split(',')}
   newArray = email.split.flatten.uniq
   newArray
-  
+  binding.pry
 end
 
 end
