@@ -12,7 +12,7 @@ attr_accessor :email_addresses
    
 def parse
  emailSplit = email_addresses.split.collect {|address| address.split(',')}
-  newArray = email.split.flatten.uniq
+  newArray = emailSplit.flatten.uniq
   newArray
   binding.pry
 end
