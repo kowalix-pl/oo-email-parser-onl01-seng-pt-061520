@@ -12,7 +12,7 @@ attr_accessor :email_addresses
  end
    
   def parse
-    parser = email_addresses.split(/", "\s/)
+    parser = email_addresses.split(/\s/)
     parser.uniq
   end 
 
