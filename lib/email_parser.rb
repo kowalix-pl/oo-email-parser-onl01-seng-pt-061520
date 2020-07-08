@@ -8,14 +8,12 @@ attr_accessor :email_addresses
  @@emails = []
  def initialize(email_addresses)
    @email_addresses = email_addresses
-   @@emails << self
  end
    
 def parse
-  puts splitEmail = emails.split.collect {|address| address.split(',')} 
+  puts splitEmail = email_addresses.split.collect {|address| address.split(',')} 
   returnArr = splitEmail.flatten.uniq
   returnArr
 end
-
 
 end
